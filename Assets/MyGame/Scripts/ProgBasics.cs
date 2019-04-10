@@ -9,6 +9,8 @@ public class ProgBasics : MonoBehaviour {
         Operators();
         Scurr();
         Burr();
+        AddNumbers(400, 20);
+        MultiplicateFourNumbers(2, 4, 8, 16);
     }
 
      public void Operators()
@@ -48,6 +50,19 @@ public class ProgBasics : MonoBehaviour {
     {
         Debug.Log(100 + 87);
     }
+
+    public void AddNumbers(int a, int b)
+    {
+        int c = a + b;
+        Debug.Log("add numbers" + c);
+    }
+
+    public void MultiplicateFourNumbers(int w, int x, int y, int z)
+    {
+        int v = w * x * y * z;
+        Debug.Log("MultiplicateFourNumbers" + v);
+    }
+
 
     // Update is called once per frame
     void Update () {
