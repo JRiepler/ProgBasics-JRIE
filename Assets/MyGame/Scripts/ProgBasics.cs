@@ -11,6 +11,9 @@ public class ProgBasics : MonoBehaviour {
         Burr();
         AddNumbers(400, 20);
         MultiplicateFourNumbers(2, 4, 8, 16);
+        Debug.Log(MyText("JRIE"));
+        string drama = MyText("JRIE");
+        Debug.Log("neu" + drama);
     }
 
      public void Operators()
@@ -61,6 +64,18 @@ public class ProgBasics : MonoBehaviour {
     {
         int v = w * x * y * z;
         Debug.Log("MultiplicateFourNumbers" + v);
+    }
+
+    public void Combine()
+    {
+        MultiplicateFourNumbers(2, 4, 8, 16);
+        AddNumbers(400, 20);
+        Operators();
+    }
+
+    public string MyText(string myName)
+    {
+        return "Drama" + "" + myName;
     }
 
 
